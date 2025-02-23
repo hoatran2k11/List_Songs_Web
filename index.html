@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách bài hát</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Danh sách bài hát</h2>
+    <ul id="song-list"></ul>
+
+    <script>
+        async function fetchSongs() {
+            try {
+                const response = await fetch('list_songs.php'); // Gọi file PHP để lấy danh sách file MP3
+                const songs = await response.json();
+                const songList = document.getElementById('song-list');
+
+                songs.forEach(song => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = `songs/${song}`; // Link đến file MP3
+                    a.textContent = song;
+                    a.target = "_blank";
+                    li.appendChild(a);
+                    songList.appendChild(li);
+                });
+            } catch (error) {
+                console.error("Lỗi khi tải danh sách bài hát:", error);
+            }
+        }
+
+        fetchSongs();
+    </script>
+</body>
+</html>

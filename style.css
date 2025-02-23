@@ -1,0 +1,52 @@
+/* Định dạng toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tiêu đề */
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Danh sách bài hát */
+#song-list {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#song-list li {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#song-list li:hover {
+    transform: scale(1.05);
+    background: #e0e0e0;
+}
+
+/* Link bài hát */
+#song-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+#song-list a:hover {
+    color: #0056b3;
+}
