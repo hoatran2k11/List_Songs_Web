@@ -84,6 +84,8 @@ h2 { color: #333; }
 #song-list a { text-decoration: none; color: blue; font-weight: bold; }
 #song-list a:hover { color: darkblue; }
 ```
+## 🎨 Giao diện  
+![Music Player UI]([https://via.placeholder.com/600x300?text=Music+Player+Screenshot](https://img.upanh.tv/2025/02/23/imaged9256d35b9b833f5.png))
 
 ## 🎧 Kết luận
 Dự án này giúp bạn tạo một trang web **danh sách bài hát đơn giản** bằng PHP và HTML, có thể **mở bài hát trực tiếp** từ trình duyệt! 🚀
